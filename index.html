@@ -2,89 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML Documentation</title>
+  <title>My Profile</title>
   <style>
-    .card {
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin: 15px;
-      border-radius: 10px;
+    body {
+      font-family: 'Segoe UI';
+      margin: 40px;
+      background-color: #121212;
+      color: #f0f0f0;
     }
-    .center {
+
+    .header {
       text-align: center;
+      margin-bottom: 40px;
     }
-    table {
+
+    .biodata-section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .biodata-section img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      border: 2px solid #333;
+    }
+
+    .bio-text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .bio-text p {
+      margin: 6px 0;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #ffcc70;
+    }
+
+    .section-content {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 800px;
       margin: 0 auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    strong {
+      color: #9be7ff;
+    }
+
+    a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-nav {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #2d9cdb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-nav:hover {
+      background-color: #2380b9;
     }
   </style>
 </head>
 <body>
-  <main>
 
-    <!-- Entities and Symbols -->
-    <section id="entities" class="card center">
-      <h2>Entities and Symbols</h2>
-      <p>Use entities like <code>&amp;lt;</code>, <code>&amp;copy;</code>, and <code>&amp;hearts;</code> to display special characters.</p>
-    </section>
+  <div class="container">
+    <div class="header">
+      <h1>My Profile</h1>
+    </div>
 
-    <!-- Charset and URL Encoding -->
-    <section id="charset" class="card center">
-      <h2>Charset and URL Encoding</h2>
-      <p>Meta charset like UTF-8 ensures wide character support, and URL encoding converts characters into safe formats for URLs.</p>
-    </section>
+    <!-- Biodata Section -->
+    <div class="biodata-section">
+      <img src="profile.jpeg">
+      <div class="bio-text">
+        <p><strong>Name:</strong> Geady</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>University:</strong> Institut Teknologi & Bisnis Sabda Setia</p>
+        <p><strong>Major:</strong> Sistem Teknologi Informasi</p>
+        <p><strong>Hobbies:</strong> Coding, Learning languages, Exploring tech </p>
+        <p><strong>About Me:</strong> Hello! My name is Geady. I'm passionate about technology and education. I enjoy creating innovative solutions, learning languages, and building meaningful digital experiences.</p>
+        <p><strong>Contact:</strong> <a href="mailto:ddydy6908@gmail.com">ddydy6908@gmail.com</a></p>
+      </div>
+    </div>
 
-    <!-- HTML Table -->
-    <section id="html-table" class="card center">
-      <h2>HTML Table Example</h2>
-      <p>HTML tables are used to present information in rows and columns:</p>
-      <table border="1">
-        <thead>
-          <tr><th>No</th><th>Name</th><th>Age</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>Geady</td><td>17</td></tr>
-          <tr><td>2</td><td>Gea</td><td>18</td></tr>
-          <tr><td>3</td><td>Dy</td><td>19</td></tr>
-        </tbody>
-      </table>
-    </section>
+    <!-- Additional Section -->
+    <div class="section">
+      <div class="section-title">My Goals</div>
+      <div class="section-content">
+        <p>I aim to become a tech expert who can help others through innovation and smart design! I'm currently focused on improving my skills in software development and UI/UX!</p>
+      </div>
+    </div>
 
-    <!-- Hobbies -->
-    <section id="hobbies" class="card">
-      <h2>Popular Hobbies</h2>
-      <ol>
-        <li>Playing Badminton</li>
-        <li>Fishing</li>
-        <li>Playing Games</li>
-      </ol>
-    </section>
+    <!-- Navigation Button -->
+    <a href="portfolio.html" class="btn-nav">See My Favorite Things here!</a>
 
-    <!-- Image and Closing -->
-    <section id="closing" class="card center">
-      <h2>Closing</h2>
-      <img src="corgi.jpg" width="300" height="300" alt="Cute Corgi">
-      <p>Thank you for reading this documentation. Hopefully, it is useful!</p>
-    </section>
+  </div>
 
-    <!-- Opinion Form -->
-    <section id="opinion-form" class="card center">
-      <h2>Give Your Opinion</h2>
-      <p>Please leave any comments, critiques, or suggestions about the contents of this page:</p>
-      <form method="post" action="#">
-        <textarea name="comment" rows="5" minlength="5" placeholder="Write your opinion..." required></textarea>
-        <br><br>
-        <input type="submit" value="Submit" style="padding: 10px 20px; background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      </form>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="card center">
-    <h3>Contact Information</h3>
-    <p>Name: Geady</p>
-    <p>Student ID: 24100002</p>
-    <p>&copy; 2025 | Geady</p>
-  </footer>
 </body>
 </html>
