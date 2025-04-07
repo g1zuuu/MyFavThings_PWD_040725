@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    background: linear-gradient(90deg, #212121, #424242);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: scale(1.03);
+}
+
+nav {
+    margin-top: 10px;
+    padding: 12px;
+    background: #263238;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 18px;
+    background: #37474f;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #102027;
+}
+
+section {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 30px;
+    margin: 20px auto;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 26px;
+    color: #90caf9;
+}
+
+h3 {
+    font-size: 20px;
+    color: #bdbdbd;
+}
+
+img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    background: #6a1b9a;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #4a148c;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+audio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.spotify-embed {
+    width: 100%;
+    max-width: 400px;
+    height: 180px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.spotify-embed:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #212121, #424242);
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    img {
+        max-width: 200px;
+    }
+}
+
+.description {
+    margin: 8px auto;
+    font-size: 16px;
+    color: #cfcfcf;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease-in-out;
+}
+
+.description:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
